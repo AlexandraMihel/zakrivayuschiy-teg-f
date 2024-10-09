@@ -377,60 +377,35 @@
   padding: 15px 20px;
 }
 
-.image__filter_sepia {
-  filter: sepia(80%);
-}
+/* фильтры */
 
-.image__filter_saturate {
-  filter: saturate(2);
-}
-
-.image__filter_invert {
-  filter: invert(100%);
-}
-
-.image__filter_hue-rotate {
-  filter: hue-rotate(60deg);
-}
-
-.image__filter_grayscale {
-  filter: grayscale(100%);
-}
-
-.image__filter_brightness-blur {
-  filter: blur(2px) brightness(120%);
-}
-
-.image__filter_saturate-sepia {
-  filter: saturate(200%) sepia(70%);
-}
-
-.filter-grayscale {
-  filter: grayscale(70%);
-}
-
-.filter-multiple {
-  filter: contrast(50%) hue-rotate(35deg) saturate(130%);
-}
 
 .filter-hue-rotate {
-  filter: hue-rotate(210deg);
+  filter: hue-rotate(-60deg);
+}
+
+.filter-contrast-rotate {
+  filter: contrast(90%) hue-rotate(90deg) saturate(88%);
+}
+
+.filter-grayscale-ss {
+  filter: grayscale(60%) sepia(85%) saturate(90%);
 }
 
 .filter-saturate {
-  filter: saturate(250%);
+  filter: saturate(200%);
 }
 
 .filter-invert {
-  filter: invert(100%);
+  filter: invert(20%);
 }
 
 .filter-sepia {
-  filter: sepia(90%);
+  filter: sepia(80%);
 }
 
 .filter-blur {
-  filter: blur(10px);
+  filter: blur(2px);
 }
 
 
