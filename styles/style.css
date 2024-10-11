@@ -49,15 +49,12 @@
 .header__logo {
   max-width: max-content;
   text-decoration: none;
-}
-
-.header__logo-text {
   display: block;
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   margin-block-end: 20px;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--logo-text-size);
   text-transform: uppercase;
 }
@@ -66,7 +63,7 @@
   margin-block-end: 20px;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--title-size);
   text-transform: uppercase;
 }
@@ -87,7 +84,7 @@
   padding: 0;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--text-small);
   text-transform: uppercase;
   background-color: var(--color-secondary);
@@ -187,7 +184,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding: 25px;
+  padding: 22px 26px;
 }
 
 .card__text {
@@ -196,13 +193,14 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--text-size);
   font-style: normal;
-  line-height: 1.2;
+  line-height: 1.16;
 }
 
 .card__controls {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  gap: 7px;
   align-items: center;
   padding-right: 25px;
   padding-left: 25px;
@@ -212,6 +210,7 @@
   display: flex;
   height: fit-content;
   border: 2px solid transparent;
+  padding: 0;
   background: var(--color-secondary);
   transition: border-color 0.3s ease;
   cursor: pointer;
@@ -251,7 +250,7 @@
   border: 2px solid var(--color-primary);
   padding: 10px 35px;
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--text-small);
   line-height: 0.9;
   background-color: var(--color-secondary);
@@ -297,7 +296,7 @@
   height: max-content;
   color: var(--color-button-text);
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--text-small);
   font-style: normal;
   line-height: 0.9;
@@ -353,7 +352,7 @@
 .dialog__text {
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var(--font-weight-normal);
+  font-weight: var( --font-weight-normal);
   font-size: var(--text-small);
   font-style: normal;
   line-height: 1.5;
@@ -424,12 +423,19 @@
     max-width: 353px;
     padding: 30px;
   }
+  .card__label {
+    right: 25px;
+  }
+  .like-icon {
+    block-size: 36px;
+  }
 }
 
 @media (width < 374px) {
   :root {
     --logo-text-size: clamp(2.475rem, 2.5357rem + 1.6964vw, 4.0625rem);
   }
+  
 }
 
 @supports ((-webkit-text-stroke: 1px var(--color-secondary)) or (text-stroke: 1px var(--color-secondary))) {
