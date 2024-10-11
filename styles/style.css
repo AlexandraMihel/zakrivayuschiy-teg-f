@@ -57,7 +57,7 @@
   margin-block-end: 20px;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--logo-text-size);
   text-transform: uppercase;
 }
@@ -66,7 +66,7 @@
   margin-block-end: 20px;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--title-size);
   text-transform: uppercase;
 }
@@ -87,7 +87,7 @@
   padding: 0;
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--text-small);
   text-transform: uppercase;
   background-color: var(--color-secondary);
@@ -133,13 +133,6 @@
   pointer-events: none;
 }
 
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  top: 0px;
-  left: -20px;
-  animation: animation-right-arrow 0.5s ease-in-out alternate infinite;
-}
 
 /* стили для карточек  */
 
@@ -249,6 +242,8 @@
   inline-size: 34px;
 }
 
+/* стили для кнопки */
+
 .button {
   position: relative;
   justify-content: center;
@@ -256,7 +251,7 @@
   border: 2px solid var(--color-primary);
   padding: 10px 35px;
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--text-small);
   line-height: 0.9;
   background-color: var(--color-secondary);
@@ -302,12 +297,14 @@
   height: max-content;
   color: var(--color-button-text);
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--text-small);
   font-style: normal;
   line-height: 0.9;
   mix-blend-mode: difference;
 }
+
+/* кнопка сохранения */
 
 .save {
   display: flex;
@@ -356,7 +353,7 @@
 .dialog__text {
   color: var(--color-primary);
   font-family: var(--font-secondary);
-  font-weight: var( --font-weight-normal);
+  font-weight: var(--font-weight-normal);
   font-size: var(--text-small);
   font-style: normal;
   line-height: 1.5;
